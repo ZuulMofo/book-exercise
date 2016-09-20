@@ -13,6 +13,7 @@ class Book
     private String title;
     private int pages;
     private String refNumber;
+    private int borrowed;
 
     /**
      * Set the author, title, pages, and refNumber fields when this object
@@ -59,6 +60,14 @@ class Book
     }
     
     /**
+     * returns borrowed
+     */
+    public int getBorrowed()
+    {
+        return borrowed;
+    }
+    
+    /**
      * sets the refNumber.
      * if there is less than three characters prints error messages
      */
@@ -70,6 +79,14 @@ class Book
         else{
             System.out.println("ERROR: Use three characters or more");
         }
+    }
+    
+    /**
+     * increments the amount of times borrowed
+     */
+    public void borrow()
+    {
+        borrowed++;
     }
     
     /**
@@ -89,7 +106,7 @@ class Book
     }
     
     /**
-     * prints the title, author, number of pages and reference number. 
+     * prints the title, author, number of pages, reference number and number of times borrowed. 
      * If there is no reference number given it will print zzz
      */
     public void printDetails()
@@ -104,6 +121,8 @@ class Book
         else{
             System.out.println("reference no.: " + refNumber);
         }
+        
+        System.out.println("no. of times borrowed: " + borrowed);
     }
     // Add the methods here ...
 }
