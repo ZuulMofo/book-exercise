@@ -12,16 +12,18 @@ class Book
     private String author;
     private String title;
     private int pages;
+    private String refNumber;
 
     /**
-     * Set the author, title, and pages fields when this object
-     * is constructed.
+     * Set the author, title, pages, and refNumber fields when this object
+     * is constructed. refNumber is always initialized at zero.
      */
     public Book(String bookAuthor, String bookTitle, int bookPages)
     {
         author = bookAuthor;
         title = bookTitle;
         pages = bookPages;
+        refNumber = "";
     }
     
     /**
@@ -46,6 +48,22 @@ class Book
     public int getPages()
     {
         return pages;
+    }
+    
+    /**
+     * returns the refNumber
+     */
+    public String getRefNumber()
+    {
+        return refNumber;
+    }
+    
+    /**
+     * sets the refNumber
+     */
+    public void setRefNumber(String ref)
+    {
+        refNumber = ref;
     }
     
     /**
