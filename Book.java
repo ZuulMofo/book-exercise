@@ -83,13 +83,21 @@ class Book
     }
     
     /**
-     * prints the title, author and number of pages
+     * prints the title, author, number of pages and reference number. 
+     * If there is no reference number given it will print zzz
      */
     public void printDetails()
     {
         System.out.println(title);
         System.out.println("by " + author);
-        System.out.println("no. of pages = " + pages);
+        System.out.println("no. of pages: " + pages);
+        
+        if(refNumber == ""){
+            System.out.println("reference no.: zzz");
+        }
+        else{
+            System.out.println("reference no.: " + refNumber);
+        }
     }
     // Add the methods here ...
 }

@@ -25,5 +25,5 @@ comment7.target=void\ printTitle()
 comment7.text=\r\n\ prints\ the\ title\ on\ a\ new\ line\r\n
 comment8.params=
 comment8.target=void\ printDetails()
-comment8.text=\r\n\ prints\ the\ title,\ author\ and\ number\ of\ pages\r\n
+comment8.text=\r\n\ prints\ the\ title,\ author,\ number\ of\ pages\ and\ reference\ number.\ \r\n\ If\ there\ is\ no\ reference\ number\ given\ it\ will\ print\ zzz\r\n
 numComments=9
