@@ -14,17 +14,19 @@ class Book
     private int pages;
     private String refNumber;
     private int borrowed;
+    private boolean courseText;
 
     /**
-     * Set the author, title, pages, and refNumber fields when this object
+     * Set the author, title, pages, refNumber, and courseText fields when this object
      * is constructed. refNumber is always initialized at zero.
      */
-    public Book(String bookAuthor, String bookTitle, int bookPages)
+    public Book(String bookAuthor, String bookTitle, int bookPages, boolean bookCourse)
     {
         author = bookAuthor;
         title = bookTitle;
         pages = bookPages;
         refNumber = "";
+        courseText = bookCourse;
     }
     
     /**

@@ -1,7 +1,7 @@
 #BlueJ class context
-comment0.params=bookAuthor\ bookTitle\ bookPages
-comment0.target=Book(java.lang.String,\ java.lang.String,\ int)
-comment0.text=\r\n\ Set\ the\ author,\ title,\ pages,\ and\ refNumber\ fields\ when\ this\ object\r\n\ is\ constructed.\ refNumber\ is\ always\ initialized\ at\ zero.\r\n
+comment0.params=bookAuthor\ bookTitle\ bookPages\ bookCourse
+comment0.target=Book(java.lang.String,\ java.lang.String,\ int,\ boolean)
+comment0.text=\r\n\ Set\ the\ author,\ title,\ pages,\ refNumber,\ and\ courseText\ fields\ when\ this\ object\r\n\ is\ constructed.\ refNumber\ is\ always\ initialized\ at\ zero.\r\n
 comment1.params=
 comment1.target=java.lang.String\ getAuthor()
 comment1.text=\r\n\ returns\ the\ author\r\n
